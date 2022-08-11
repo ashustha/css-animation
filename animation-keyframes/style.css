@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.wrap{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 10px solid gray;
+    border-radius: 5px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    box-sizing: border-box;
+    transition: all 0.1s linear;
+    animation: firstAnimation 5s linear 0s infinite;
+}
+
+@keyframes firstAnimation {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 250px;
+        background-color: blueviolet;
+    }
+}

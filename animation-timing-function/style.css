@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.circle1{
+  background-color: gray;  
+  animation-timing-function: ease;
+}
+.circle2{
+  background-color: rgb(92, 90, 211);  
+  animation-timing-function: ease-in;
+
+}
+.circle3{
+  background-color: rgb(142, 49, 100);  
+  animation-timing-function: ease-out;
+
+}
+.circle4{
+  background-color: rgb(185, 185, 45);  
+  animation-timing-function: ease-in-out;
+
+}
+.circle5{
+  background-color: rgb(38, 186, 112);  
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.circle6{
+  background-color: rgb(61, 206, 238);  
+  animation-timing-function: steps(5, start);
+  animation-timing-function: linear;
+}
+.circle7{
+  background-color: rgb(61, 206, 238);  
+  animation-timing-function: steps(5, start);
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 400px;
+        opacity: 0.5;
+    }
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.large-square{
+    height: 200px;
+    width: 200px;
+    border-radius: 5% 50% 50% 50%;
+    background-color: blueviolet;
+    animation-name: spinner ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.large-square:hover{
+    animation-play-state: paused;
+}
+
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+    }
+}

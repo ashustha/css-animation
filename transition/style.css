@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box-wrapper{
+    padding: 100px 0px; 
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-bottom: 50px;
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.box-1:hover{
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+}
+.box-2{
+    transition-delay: 0.2s;
+    border-radius: 5% 50% 50% 50%;
+}
+.box-2:hover{
+    transform: rotate(720deg);
+    background-color: blueviolet;
+}
+.box-3{
+    transition-delay: 0.3s;
+    border-radius: 5% 50% 50% 50%;
+}
+
+.box-3:hover{
+    transform: rotate(5turn);
+    background-color: orange;
+}
+
+
+.translate:hover{
+    /* here the box moves 20px in x-axis and 20px to y-axis and changes its color*/
+    transform: translate(20px, 20px);
+    background-color: black;
+}
+
+.skew:hover{
+    transform: skewX(30deg);
+}
+
+.transform-origin{
+    transform-origin: top left;
+}
+
+.transform-origin:hover{
+    transform: rotate(2turn);
+}
+
+.multiple{
+    border-radius: 50% 50% 0% 50%;
+}
+
+.multiple:hover{
+    transform: translate(50px, 100px) rotate(2turn) scale(2);
+}
+
+.proper-transform-box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 15px solid red;
+}
+
+.transform-box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    transform-origin: top right;
+    pointer-events: none;
+}
+
+.proper-transform-box:hover .transform-box{
+    transform:  rotate(180deg) scale(2) translate(0px, -90px);
+}
+
+.wrap{
+    height: 200px;
+    width: 200px;
+    margin: 100px auto;
+    background-color: #f5f5f5;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.wrap .box{
+    height: 200px;
+    width: 200px;
+    background-color:red;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(100px) rotateX(15deg);
+
+}
+
+.box-wrapper2{
+    perspective: 100px;
+    text-align: center;
+}
+
+.wrap2{
+    height: 200px;
+    width: 200px;
+    margin: 100px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.wrap2 .box{
+    width: 200px;
+    height: 200px;
+    transform: rotatey(45deg);
+}
